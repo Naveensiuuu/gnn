@@ -1,0 +1,39 @@
+# AgriConnect GNN Module — Python Dependencies
+# =============================================
+# Install with: pip install -r requirements.txt
+# Python >= 3.10 required
+
+# Core Deep Learning
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Graph Neural Networks (PyTorch Geometric)
+# Install PyG separately per CUDA version — see pyg.org/whl
+torch-geometric>=2.4.0
+torch-scatter
+torch-sparse
+torch-cluster
+
+# Federated Learning
+flwr>=1.6.0            # Flower FL framework
+
+# Scientific Computing
+numpy>=1.24.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+pandas>=2.0.0
+
+# Geospatial
+# (Haversine is implemented natively — no extra dep needed)
+# Optional: for visualising the farm graph map
+# folium>=0.14.0
+
+# Explainability (optional — for full SHAP instead of approximation)
+# shap>=0.43.0
+
+# Experiment tracking (optional but recommended)
+# wandb>=0.16.0
+
+# Utilities
+tqdm>=4.66.0
+matplotlib>=3.7.0      # for plotting benchmark curves
